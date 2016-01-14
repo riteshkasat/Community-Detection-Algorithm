@@ -39,12 +39,9 @@ if __name__=="__main__":
 		print "Inputfile : Contains represenation of the graph"
 		print "Outputfile : This file store community visualization"
 		exit(-1)
-	fname = sys.argv[1]
-	with open(fname) as f:
-		content = f.readlines()
 
 	result_communities=[]
-	G = nx.read_edgelist("input1")
+	G = nx.read_edgelist(sys.argv[1])
 	copyGraph = copy.deepcopy(G)
 	d={}
 	for node in G:
