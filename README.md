@@ -1,0 +1,3 @@
+# Community Detection
+ This project will be implements a community detection algorithm using a divisive hierarchical clustering (Girvan-Newman algorithm). 
+ It makes use of 2 python libraries called networkx and community. The project uses betweenness function and the modularity function which are a part of the networkx and the community libraries respectively. It also uses the matplotlib library for plotting the communities.
