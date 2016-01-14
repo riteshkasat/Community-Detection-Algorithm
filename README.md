@@ -5,7 +5,7 @@
 
 
 # Execution Details
-The python code should take in two parameters, namely input file containing the graph and the output image with the community structure. 
+The python code takes two parameters, namely input file containing the graph and the output image with the community structure. 
 
 For example:
 	
@@ -16,21 +16,31 @@ For example:
 1 2 where 1 and 2 are the nodes and each line represents an edge between the two
 nodes. The nodes are separated by one space.
 
-`image.png`: This will be a visualization of the communities detected by this algorithm. Each community is represnted in a unique color. Each node  contains a label representing the node numbers in the input file. 
+`image.png`: This will be a visualization of the communities detected by this algorithm. Each community is represented in a unique color. Each node  contains a label representing the node numbers in the input file. 
 
 #Output:
-The Python code outputs the communities in the form of arrays
+The Python code outputs the communities in the form of arrays	
 to standard output (the console). Each community is an array representing 
 nodes in that community. 
 
 For example:
 
-[1,2,3,4]
+[1,2,3]
 
-[5,6,7,8]
+[4,5,6]
 
-[9]
+[7]
 
-[10]
+[8]
 
-These 4 arrays represent the 4 communities. 
+[9,10,11]
+
+[12,13,14]
+
+These 6 arrays represent the 6 communities in the input graph. 
+
+Also, the community graph will be stored in output file.
+
+Sample graph for above community:
+
+![alt tag](sample_image.png)
